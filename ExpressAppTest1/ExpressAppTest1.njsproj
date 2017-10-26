@@ -12,7 +12,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>c5ee239a-c147-43a3-97a5-2db3f0a4cbc7</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>app.js</StartupFile>
+    <StartupFile>server.js</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -30,11 +30,24 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="app.js" />
+    <Compile Include="public\javascripts\activities-ajax.js" />
+    <Compile Include="public\javascripts\jquery.js" />
+    <Compile Include="routes\index.js" />
+    <Compile Include="routes\test.js" />
+    <Compile Include="routes\users.js" />
+    <Compile Include="server.js" />
     <Content Include="package.json" />
+    <Content Include="public\api\activities" />
+    <Content Include="public\stylesheets\style.css" />
+    <Content Include="public\stylesheets\style.less" />
     <Content Include="README.md" />
+    <Content Include="views\error.ejs" />
+    <Content Include="views\index.ejs" />
+    <Content Include="views\test.ejs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="public\" />
+    <Folder Include="public\api\" />
     <Folder Include="public\images\" />
     <Folder Include="public\javascripts\" />
     <Folder Include="public\stylesheets\" />
