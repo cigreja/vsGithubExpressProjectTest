@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css'/>
+
+</head>
+<body>
+
+<h1> Time Manager </h1>
+
+<!-- add activity -->
+<form id="add-form">
+    <h3> Add Activity: </h3>
+    <table>
+        <tr>
+            <td>client:</td>
+            <td><input type="text" id="client" required /></td>
+        </tr>
+        <tr>
+            <td>project:</td>
+            <td><input type="text" id="project" required /></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><button id="add-activity"> Add Activity! </button></td>
+        </tr>
+    </table>
+</form>
+
+<!-- remove activity -->
+<form id="remove-form">
+    <h3> Remove Activity: </h3>
+    <table>
+        <tr>
+            <td>id:</td>
+            <td><input type="number" id="remove-id" required /></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><button id="remove-activity"> Remove Activity! </button></td>
+        </tr>
+    </table>
+</form>
+
+<!-- update activity -->
+<form id="update-form">
+    <h3> Update Activity: </h3>
+    <table>
+        <tr>
+            <td>id:</td>
+            <td><input type="number" id="update-id" required /></td>
+        </tr>
+        <tr>
+            <td>client: </td>
+            <td><input type="text" id="update-client" required /></td>
+        </tr>
+        <tr>
+            <td>project: </td>
+            <td><input type="text" id="update-project" required /></td>
+        </tr>
+        <tr>
+            <td> </td>
+            <td><button type="submit" id="update-activity"> Update Activity! </button></td>
+        </tr>
+    </table>
+</form>
+
+<br> List of activities: <br>
+<ul id="activities"> </ul>
+
+<!-- js and jquery -->
+<script type="text/javascript" src="javascripts/jquery.js"></script>
+<script type="text/javascript" src="javascripts/activities-ajax.js"></script>
+
+
+</body>
+</html>
